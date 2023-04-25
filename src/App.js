@@ -1,8 +1,7 @@
 import "./App.css";
 import EditProduct from "./components/editProduct/EditProduct";
 import ProductView from "./components/productView/ProductView";
-import Layout from "./layout/Layout";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (

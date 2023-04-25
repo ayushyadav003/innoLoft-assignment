@@ -1,18 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import {
   AccountBalanceOutlined,
   BookmarkBorderOutlined,
   ViewModuleOutlined,
 } from "@mui/icons-material";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-// import CircularProgress from "@mui/material/CircularProgress";
-// import { Backdrop } from "@mui/material";
 
 function Layout({ children }) {
   const matches = useMediaQuery("(min-width:600px)");
-  const [mobileTopbar, setMobileopbar] = useState("explore");
 
   const options = [
     { name: "Main", icon: <AccountBalanceOutlined />, route: "/" },
@@ -96,7 +91,6 @@ function Layout({ children }) {
       <div style={{ margin: !matches ? "12% 0 15% 0" : "0 0 0 15%" }}>
         {children}
       </div>
-      {/* <ToastContainer /> */}
     </div>
   );
 }
