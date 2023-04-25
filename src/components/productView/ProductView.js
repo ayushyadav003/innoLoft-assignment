@@ -3,7 +3,7 @@ import useApi from "../../hooks/useApi";
 import { Backdrop, CircularProgress } from "@mui/material";
 
 function ProductView() {
-  const { data, isLoading, error } = useApi("/product/6781/");
+  const { data, isLoading } = useApi("/product/6781/");
 
   return (
     <div className="p-[4%] grid gap-6">

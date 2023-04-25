@@ -3,7 +3,7 @@ import useApi from "../../hooks/useApi";
 import CancelIcon from "@mui/icons-material/Cancel";
 
 function EditProduct() {
-  const { data, isLoading, error } = useApi("/product/6781/");
+  const { data } = useApi("/product/6781/");
   const trlData = useApi("/trl/");
   const [desc, setDesc] = useState();
   const [trl, setTrl] = useState([]);
